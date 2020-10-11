@@ -12,9 +12,11 @@
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
-		<!--header-->
+		
+		<!--HEADER-->
 		<header class="header">
 			<div class="conteiner">
+				<!--HEADER NAVIGATION-->
 				<nav class="navigation">
 					<a class="logo link" href="./index.html" aria-label="Логотип Веб Студии" lang="en">
 						<span class="logo-web">Web</span>
@@ -22,7 +24,7 @@
 					</a>
 					<ul class="navigation-list list">
 						<li class="navigation-list-item">
-							<a class="navigation-list-link link" href="./index.html">Студия</a>
+							<a class="navigation-list-link link underline" href="./index.html">Студия</a>
 						</li>
 						<li class="navigation-list-item">
 							<a class="navigation-list-link link" href="./portfolio.html">Портфолио</a>
@@ -33,6 +35,7 @@
 					</ul>
 				</nav>
 
+				<!--HEADER ADDRESS-->
 				<address class="address">
 					<ul class="address-list list">
 						<li class="address-list-item">
@@ -56,8 +59,9 @@
 			</div>
 		</header>
 
+		<!--MAIN-->
 		<main class="main">
-			<!--hero-->
+			<!--HERO-->
 			<section class="hero">
 				<div class="conteiner">
 					<h1 class="hero-title">
@@ -67,11 +71,11 @@
 					</h1>
 				</div>
 				<div class="conteiner">
-					<button type="button" class="modal-btn">Заказать услугу</button>
+					<button type="button" class="modal-btn" data-modal-open>Заказать услугу</button>
 				</div>
 			</section>
 
-			<!--our advantages-->
+			<!--OUR ADVANTAGES-->
 			<section class="our-advantages">
 				<div class="conteiner">
 					<h2 class="our-advantages-title">Наши преимущества</h2>
@@ -104,31 +108,28 @@
 				</div>
 			</section>
 
-			<!--what are we doing-->
+			<!--WHAT ARE WE DOING-->
 			<section class="what-are-we-doing">
 				<div class="conteiner">
 					<h2 class="what-are-we-doing-title">Чем мы занимаемся</h2>
 					<ul class="what-are-we-doing-list list">
 						<li class="what-are-we-doing-list-item">
-							<a href="">
-								<img src="./images/studio/what-are-we-doing/what-are-we-doing-1.jpg" width="370" height="294" alt="" />
-							</a>
+							<img src="./images/studio/what-are-we-doing/what-are-we-doing-1.jpg" width="370" height="294" alt="" />
+							<p class="what-are-we-doing-wpapper">Десктопные приложения</p>
 						</li>
 						<li class="what-are-we-doing-list-item">
-							<a href="">
-								<img src="./images/studio/what-are-we-doing/what-are-we-doing-2.jpg" width="370" height="294" alt="" />
-							</a>
+							<img src="./images/studio/what-are-we-doing/what-are-we-doing-2.jpg" width="370" height="294" alt="" />
+							<p class="what-are-we-doing-wpapper">Мобильные приложения</p>
 						</li>
 						<li class="what-are-we-doing-list-item">
-							<a href="">
-								<img src="./images/studio/what-are-we-doing/what-are-we-doing-3.jpg" width="370" height="294" alt="" />
-							</a>
+							<img src="./images/studio/what-are-we-doing/what-are-we-doing-3.jpg" width="370" height="294" alt="" />
+							<p class="what-are-we-doing-wpapper">Дизайнерские решения</p>
 						</li>
 					</ul>
 				</div>
 			</section>
 
-			<!--our team-->
+			<!--OUR TEAM-->
 			<section class="our-team">
 				<div class="conteiner">
 					<h2 class="our-team-title">Наша команда</h2>
@@ -277,7 +278,7 @@
 				</div>
 			</section>
 
-			<!--regular customers-->
+			<!--REGULAR CUSTOMERS-->
 			<section class="regular-customers">
 				<div class="conteiner">
 					<h2 class="regular-customers-title">Постоянные клиенты</h2>
@@ -329,9 +330,11 @@
 			</section>
 		</main>
 
+		<!--FOOTER-->
 		<footer class="footer">
 			<div class="conteiner">
 				<div class="footer-side">
+					<!--FOOTER LEFT SIDE-->
 					<div class="footer-left-side">
 						<a class="logo-footer link" href="./index.html" aria-label="Логотип Веб Студии" lang="en">
 							<span class="logo-footer-web">Web</span>
@@ -353,9 +356,10 @@
 							</ul>
 						</address>
 					</div>
+					<!--FOOTER RIGHT SIDE-->
 					<div class="footer-right-side">
 						<section class="join">
-							<h3 class="footer-join-title">присоединяйтесь</h3>
+							<p class="footer-join-text">присоединяйтесь</p>
 							<ul class="footer-social-list list">
 								<li class="footer-social-list-item">
 									<a href="#" class="footer-social-list-link">
@@ -391,5 +395,19 @@
 				</div>
 			</div>
 		</footer>
+
+		<!--BACKDROP-->
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button type="button" class="close-btn" data-modal-close>
+					<svg class="close-svg">
+						<use href="/images/studio/svg/symbol-defs.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+
+		<!--SCRIPT JS MODAL-->
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
